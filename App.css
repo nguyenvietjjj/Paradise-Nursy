@@ -1,0 +1,142 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.landing-page {
+  /* Replace the URL with an actual background image URL if preferred */
+  background-image: url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.landing-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.get-started-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.get-started-btn:hover {
+  background-color: #45a049;
+}
+
+.about-us-container {
+  margin-top: 40px;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2E7D32;
+  padding: 15px 30px;
+  color: white;
+}
+
+.nav-links span {
+  margin: 0 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.nav-links span:hover {
+  text-decoration: underline;
+}
+
+/* Product List */
+.category-section {
+  margin: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card, .cart-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  background-color: #f9f9f9;
+}
+
+.product-card img, .cart-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Cart Specific */
+.cart-container {
+  padding: 30px;
+}
+
+.cart-controls button {
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkout-btn, .continue-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.checkout-btn { background-color: #ff9800; color: white; border: none; }
+.continue-btn { background-color: #2196F3; color: white; border: none; }
